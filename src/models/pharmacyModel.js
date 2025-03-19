@@ -1,7 +1,7 @@
-const DB = require("../database/db");
+const mongoose = require("mongoose");
 
-const PharmacySchema = new DB.mongoose.Schema({});
+const PharmacySchema = new mongoose.Schema({});
 
-const Pharmacy = DB.mongoose.model("Pharmacy", PharmacySchema);
+const Pharmacy = mongoose.model("Pharmacy", PharmacySchema);
 
 module.exports = Pharmacy;
